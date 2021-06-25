@@ -17,7 +17,7 @@ public class Register {
 	public Register(int account, String name, double balance) {		
 		this.account = account;
 		this.name = name;		
-		this.balance = balance;
+		deposit(balance);
 	}
 	
 	public int getAccount() {
@@ -37,7 +37,7 @@ public class Register {
 		return balance += value;
 	}
 	public double withdraw (double value) {
-		return balance = balance - value - 5;
+		return balance -= value + 5;
 	}
 	public String toString () {
 		return "Account "+ account +
